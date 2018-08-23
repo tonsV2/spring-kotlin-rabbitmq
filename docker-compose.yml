@@ -1,0 +1,20 @@
+version: "3"
+services:
+  producer:
+    build:
+      context: producer/
+    ports:
+      - 8080:8080
+#    depends_on:
+#      - kafka
+#    environment:
+#      kafka.host: kafka
+#      kafka.port: 9092
+#  consumer:
+#    build:
+#      context: consumer/
+#    depends_on:
+#      - kafka
+#    environment:
+#      kafka.host: kafka
+#      kafka.port: 9092
