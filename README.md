@@ -1,7 +1,7 @@
 # Motivation
 Simple RabbitMQ "Hello world" application using Spring Boot 2.0 with Kotlin
 
-# Launch (and build) application
+# Launch applications
 ```docker-compose up```
 
 # Execute http request (using httpie)
