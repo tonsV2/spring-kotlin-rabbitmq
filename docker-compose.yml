@@ -5,6 +5,9 @@ services:
     ports:
       - 5672:5672
       - 15672:15672
+    volumes:
+    - ./definitions.json:/etc/rabbitmq/definitions.json:ro
+    - ./rabbitmq.config:/etc/rabbitmq/rabbitmq.config:ro
   producer:
     build:
       context: producer/
