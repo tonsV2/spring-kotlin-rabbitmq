@@ -1,3 +1,10 @@
 spring:
   rabbitmq:
+    host: localhost
+
+---
+
+spring:
+  profiles: docker
+  rabbitmq:
     host: rabbitmq

@@ -15,8 +15,12 @@ services:
       - 8080:8080
     depends_on:
       - rabbitmq
+    environment:
+      SPRING_PROFILES_ACTIVE: docker
   consumer:
     build:
       context: consumer/
     depends_on:
       - rabbitmq
+    environment:
+      SPRING_PROFILES_ACTIVE: docker
